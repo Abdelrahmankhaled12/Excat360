@@ -356,6 +356,8 @@ header div button#showMenu {
 @media (max-width: 768px) {
   header div button#showMenu {
     display: block;
+    color: white;
+    cursor: pointer;
   }
 }
 
@@ -386,6 +388,8 @@ header.show div ul li:hover {
 
 header.show div button#showMenu {
   color: var(--main-color);
+  cursor: pointer;
+
 }
 /* end Header */
 /* Start Landing */
