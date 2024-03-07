@@ -1,6 +1,6 @@
 // Selecting the buttonScroll element and the header element from the DOM
 let buttonScroll = document.querySelector(".buttonScroll");
-let header = document.querySelector("header");
+let header = document.getElementById("header");
 
 // Event handler for window scroll event
 window.onscroll = function () {
