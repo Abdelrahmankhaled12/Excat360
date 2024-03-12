@@ -8,6 +8,11 @@ header.show div ul a {
   display: block;
   text-decoration: none;
 }
+@media (max-width: 992px) {
+  header.german div ul a {
+    font-size: 13px;
+  }
+}
 
 header.show div ul a:hover {
   color: var(--main-color);
@@ -222,7 +227,7 @@ header.show div ul a:hover {
 /* End Team */
 /* Start Consultation */
 .consultation {
-  padding:calc(var(--section-padding) - 30px) 0px;
+  padding: calc(var(--section-padding) - 30px) 0px;
 }
 
 .consultation .title h1 {
@@ -283,8 +288,7 @@ header.show div ul a:hover {
 .consultation .form h5 {
   font-size: 25px;
   margin: 25px 0px 0px;
-  color: #2E0249;
-
+  color: #2e0249;
 }
 .consultation .form .radios label {
   border: 1px solid rgb(35 35 35 / 15%);
@@ -295,13 +299,13 @@ header.show div ul a:hover {
   display: block;
   width: fit-content;
   cursor: pointer;
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .consultation input[type="radio"]:checked + label {
   background-color: var(--main-color);
-  border: 1px solid  var(--main-color);
-  color:#ffffff;
+  border: 1px solid var(--main-color);
+  color: #ffffff;
 }
 
 .consultation .form .checkBoxes {
@@ -317,7 +321,7 @@ header.show div ul a:hover {
   padding-left: 28px;
   margin-bottom: 12px;
   cursor: pointer;
-  color:#282828;
+  color: #282828;
   font-size: 18px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -343,7 +347,6 @@ header.show div ul a:hover {
   border: 2px solid var(--main-color);
   border-radius: 6px;
 }
-
 
 .consultation .checkbox input[type="checkbox"]:checked ~ .checkmark {
   background-color: var(--main-color);
@@ -474,11 +477,10 @@ header.show div ul a:hover {
   border-radius: 10px;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .consultation .map iframe {
     height: 300px;
   }
-  
 }
 
 .consultation .map::after {
@@ -510,4 +512,3 @@ footer {
   border-top: 1px solid #00000017;
 }
 /* End Footer */
-

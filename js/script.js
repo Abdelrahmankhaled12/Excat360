@@ -68,3 +68,37 @@ document.getElementById("outMenu").addEventListener("click", function () {
     // Remove the 'showMenuMobile' class from the 'menuMobile' element when 'outMenu' button is clicked
     document.getElementById("menuMobile").classList.remove("showMenuMobile");
 });
+
+
+// Initialize variable to keep track of whether language dropdown is open or closed
+let openLanguages = false;
+
+// Get references to language dropdown and language button elements
+const languageDropdown = document.getElementById("ul_language");
+const languageButton = document.getElementById("language");
+
+// Add event listener to detect clicks anywhere on the document
+document.addEventListener("click", function(event) {
+    const targetElement = event.target;
+    
+    // Check if the click is outside language button and dropdown
+    if (!languageButton.contains(targetElement) && !languageDropdown.contains(targetElement)) {
+        // If click is outside, close the dropdown
+        openLanguages = false;
+        languageDropdown.style.opacity = "0";
+    }
+});
+
+// Add event listener to toggle dropdown visibility when language button is clicked
+languageButton.addEventListener("click", function () {
+    if (openLanguages) {
+        // If dropdown is open, close it
+        openLanguages = false;
+        languageDropdown.style.opacity = "0";
+    } else {
+        // If dropdown is closed, open it
+        openLanguages = true;
+        languageDropdown.style.opacity = "1";
+    }
+});
+
