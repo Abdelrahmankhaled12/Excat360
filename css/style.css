@@ -1319,17 +1319,23 @@ header .mobileLanguage {
   position: relative;
 }
 
-.map iframe {
+.map img {
   width: 100%;
   height: 300px;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .map img {
+    height: 200px;
+  }
 }
 
 .map::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 99%;
   background-color: #00000047;
   top: 0;
   left: 0;
@@ -1420,9 +1426,36 @@ footer .info p {
 }
 
 footer .madeBy {
-  border-top: 1px solid #0000001f;
-  padding: 20px 0px 0px;
+  display: flex;
   text-align: center;
   color: #aaaaaa;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #0000001f;
+  padding: 20px 0px 0px;
+  flex-wrap: wrap-reverse;
 }
+
+@media (max-width: 550px) {
+  footer .madeBy {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+footer .madeBy p  {
+  margin:0px;
+}
+
+footer .linksFooter a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+  margin: 0px 15px;
+}
+
+footer .linksFooter a:hover {
+  letter-spacing: 1.5px;
+}
+
 /* End Footer */
