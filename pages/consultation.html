@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
 
     <!-- Page Title  -->
-    <title>Excat360</title>
+    <title>Idea Portal</title>
 
     <!-- animate on scroll library -->
     <link href="../css/animate.min.css" rel="stylesheet">
@@ -28,41 +28,37 @@
 
 <body>
     <!-- Start Animation -->
-    <div class="animation" id="loader">
+    <!-- <div class="animation" id="loader">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- End Animation -->
 
     <!-- Start Effect -->
-    <div id="effect" class="effect"></div>
+    <!-- <div id="effect" class="effect"></div> -->
     <!-- End Effect -->
 
     <!-- Start Content Page style="display: none;"-->
-    <div class="sections" id="sections" >
+    <div class="sections" id="sections">
         <!-- Start Banner -->
         <header class="show">
             <div class="containerHeader">
-                <h1>Excat360</h1>
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="">
+                </div>
                 <ul class="links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html">About</a></li>
-                    <li><a href="../index.html">Features</a></li>
-                    <li><a href="../index.html">Pricing</a></li>
-                    <li><a href="../index.html">Team<a></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_home"></a></li>
+                    <li><a href="../index.html"  data-i18n="header_Link_about"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_features"></a></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_pricing"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_team"><a></a></li>
                 </ul>
                 <div class="language">
-                    <button id="language">
-                        <div class="text">
-                            <img src="../assets/american.png" alt="american"> EN
-                        </div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <ul id="ul_language">
-                        <li><a href="./consultation.html"><img src="../assets/american.png" alt=""> EN </a></li>
-                        <li><a href="./Beratung.html"><img src="../assets/germany.png" alt=""> DE </a></li>
-                    </ul>
+                    <select>
+                        <option value="en" selected>EN</option>
+                        <option value="de">DE</option>
+                    </select>
                 </div>
-                <a href="../index.html" id="contactUsButton">Contact Us</a>
+                <a href="../index.html" id="contactUsButton" data-i18n="header_Link_contact"></a>
                 <button id="showMenu"><i class="fa-solid fa-bars"></i></button>
             </div>
         </header>
@@ -89,9 +85,6 @@
                         <div class="image">
                             <img src="../assets/member2.jpg" alt="">
                             <a className="link" target='_blank' href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a className="link" target='_blank' href="#">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                             <a className="link" target='_blank' href="#">
@@ -104,17 +97,13 @@
                         <div class="text">
                             <h4>Kristian Fankhauser</h4>
                             <p>Marketing & Co-Founder</p>
-                            <h5>Contact Details</h5>
+                            <h5 data-i18n="teamCon_details"></h5>
                             <p class="email">Email: sales@example.com</p>
-                            <p class="phone">Call: +012 345 6789</p>
                         </div>
                     </div>
                     <div class="member wow animate__fadeInUp" data-wow-duration="2.5s">
                         <div class="image">
                             <img src="../assets/member.jpg" alt="">
-                            <a className="link" target='_blank' href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
                             <a className="link" target='_blank' href="#">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
@@ -128,9 +117,8 @@
                         <div class="text">
                             <h4>Pascal Kamper</h4>
                             <p>Development & Co-Founder</p>
-                            <h5>Contact Details</h5>
+                            <h5 data-i18n="teamCon_details"></h5>
                             <p class="email">Email: sales@example.com</p>
-                            <p class="phone">Call: +012 345 6789</p>
                         </div>
                     </div>
                 </div>
@@ -141,16 +129,16 @@
         <div class="consultation">
             <div class="container">
                 <div class="title wow animate__fadeInUp" data-wow-duration="2s">
-                    <h1>YOUR INITIAL CONSULTATION</h1>
+                    <h1 data-i18n="consultation_heading">YOUR INITIAL CONSULTATION</h1>
                 </div>
                 <div class="grid">
                     <div class="form wow animate__fadeInUp" data-wow-duration="2s">
-                        <p>Our free initial consultation gives you the opportunity to discuss your requirements and
+                        <p data-i18n="consultation_paragraphOne">Our free initial consultation gives you the opportunity to discuss your requirements and
                             goals
                             with us. We listen carefully to gain a better understanding of your needs and offer you
                             possible
                             solutions.</p>
-                        <p>You will have the opportunity to ask questions and find out more about our services. Together
+                        <p data-i18n="consultation_paragraphTwo">You will have the opportunity to ask questions and find out more about our services. Together
                             we
                             will develop a strategy to achieve your goals and advance your company.</p>
                         <form action="">
@@ -225,15 +213,6 @@
                     <div class="boxes wow animate__fadeInUp" data-wow-duration="2s">
                         <div class="box">
                             <div class="icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="text">
-                                <h4>+4178 608 17 29</h4>
-                                <p>Free support</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div class="text">
@@ -249,9 +228,6 @@
                                 <h4>Address</h4>
                                 <p>Kamber & Fankhauser Dorfmattweg 7 4512 Bellach</p>
                             </div>
-                        </div>
-                        <div class="map">
-                            <img src="../assets/map.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -278,21 +254,12 @@
                         </div>
                         <div class="info">
                             <div class="icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <p>+4178 608 17 29</p>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                             <p>info@exact-360.comh</p>
                         </div>
                         <div class="links">
                             <p>Social Media : </p>
-                            <a className="link" target='_blank' href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
                             <a className="link" target='_blank' href="#">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
@@ -325,16 +292,16 @@
         <div class="menuMobile" id="menuMobile">
             <div class="container">
                 <div class="top">
-                    <h4>Menu</h4>
+                    <h4>IDEA PARTAL</h4>
                     <button id="buttonClose"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html">About</a></li>
-                    <li><a href="../index.html">Features</a></li>
-                    <li><a href="../index.html">Pricing</a></li>
-                    <li><a href="../index.html">Team<a></a></li>
-                    <li><a href="../index.html">Contact Us<a></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_home"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_about"></a></li>
+                    <li><a href="../index.html"  data-i18n="header_Link_features"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_pricing"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_team"><a></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_contact"><a></a></li>
                 </ul>
             </div>
             <div id="outMenu"></div>
@@ -344,7 +311,7 @@
     <!-- File Js Wow -->
     <script src="../js/wow.min.js"></script>
     <!-- File js Main -->
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" type="module"></script>
 </body>
 
 </html>

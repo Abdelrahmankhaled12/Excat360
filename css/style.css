@@ -123,19 +123,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.animation .image img {
+  width:120px;
 }
 
 .loader {
   font-weight: bold;
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   animation: l1 1s linear infinite alternate;
 }
 
 .loader:before {
-  content: "Excat360";
+  content: "IDEA PARTAL";
   color: var(--main-color);
 }
+
+.loaderTwo {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 25px;
+  animation: l1 1s linear infinite alternate;
+}
+
+.loaderTwo:before {
+  content: "GET THE DIRECTION";
+  color: var(--blue-color);
+}
+
 @keyframes l1 {
   to {
     opacity: 0;
@@ -324,6 +342,10 @@ header .containerHeader ul li {
   header .containerHeader ul li {
     font-size: 13px;
   }
+}
+
+header .logo img {
+  width:150px;
 }
 
 header .containerHeader ul li:hover {
@@ -567,13 +589,6 @@ header .mobileLanguage {
   }
 }
 
-.landing img {
-  position: absolute;
-  z-index: 2;
-  bottom: -35px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 /* End Landing */
 /* Start Section best Solution  */
 .bestSolution {
@@ -1148,10 +1163,6 @@ header .mobileLanguage {
   transition: 0.6s;
 }
 
-.team a:nth-of-type(3) {
-  top: 165px;
-  transition: 0.7s;
-}
 
 .team a i {
   position: absolute;
@@ -1350,6 +1361,7 @@ header .mobileLanguage {
 footer {
   padding: 30px 0px;
   background-color: #ffffff;
+  border-top: 1px solid #00000017;
 }
 
 footer .grid {
@@ -1464,3 +1476,39 @@ footer .linksFooter a:hover {
 }
 
 /* End Footer */
+
+.logo img {
+  width:150px;
+}
+
+header select {
+  border-radius: 5px;
+  background-image: url(../assets/american.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 35px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+header option {
+  background-image: none; /* Remove default background image */
+  color: #000;
+  font-size: 20px;
+}
+
+/* Style individual options */
+header option[value="en"] {
+  background-image: url('../assets/american.png'); /* Image for English */
+}
+
+header option[value="de"] {
+  background-image: url('../assets/germany.png'); /* Image for German */
+}
+header.show select {
+  color:#000;
+}

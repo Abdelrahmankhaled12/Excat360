@@ -1,3 +1,6 @@
+import translations from "./translations.js";
+
+
 // Selecting the buttonScroll element and the header element from the DOM
 let buttonScroll = document.querySelector(".buttonScroll");
 let header = document.getElementById("header");
@@ -70,35 +73,23 @@ document.getElementById("outMenu").addEventListener("click", function () {
 });
 
 
-// Initialize variable to keep track of whether language dropdown is open or closed
-let openLanguages = false;
 
-// Get references to language dropdown and language button elements
-const languageDropdown = document.getElementById("ul_language");
-const languageButton = document.getElementById("language");
-
-// Add event listener to detect clicks anywhere on the document
-document.addEventListener("click", function(event) {
-    const targetElement = event.target;
-    
-    // Check if the click is outside language button and dropdown
-    if (!languageButton.contains(targetElement) && !languageDropdown.contains(targetElement)) {
-        // If click is outside, close the dropdown
-        openLanguages = false;
-        languageDropdown.style.opacity = "0";
-    }
+const languageSelector = document.querySelector("select");
+languageSelector.addEventListener("change", (event) => {
+    setLanguage(event.target.value);
+    localStorage.setItem("lang", event.target.value);
 });
 
-// Add event listener to toggle dropdown visibility when language button is clicked
-languageButton.addEventListener("click", function () {
-    if (openLanguages) {
-        // If dropdown is open, close it
-        openLanguages = false;
-        languageDropdown.style.opacity = "0";
-    } else {
-        // If dropdown is closed, open it
-        openLanguages = true;
-        languageDropdown.style.opacity = "1";
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    const language = localStorage.getItem("lang") || "en";
+    setLanguage(language);
 });
 
+const setLanguage = (language) => {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach((element) => {
+        const translationKey = element.getAttribute("data-i18n");
+        element.innerHTML = translations[language][translationKey];
+    });
+    document.dir = language === "ar" ? "rtl" : "ltr";
+};

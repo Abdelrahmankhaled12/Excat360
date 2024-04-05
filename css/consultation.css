@@ -8,6 +8,7 @@ header.show div ul a {
   display: block;
   text-decoration: none;
 }
+
 @media (max-width: 992px) {
   header.german div ul a {
     font-size: 13px;
@@ -31,7 +32,7 @@ header.show div ul a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 70vh;
+  height: 80vh;
   color: white;
   overflow: hidden;
 }
@@ -209,10 +210,6 @@ header.show div ul a:hover {
   transition: 0.6s;
 }
 
-.teamCon a:nth-of-type(3) {
-  top: 165px;
-  transition: 0.7s;
-}
 
 .teamCon a i {
   position: absolute;
@@ -508,7 +505,4 @@ header.show div ul a:hover {
 }
 /* End Consultation */
 /* Start Footer */
-footer {
-  border-top: 1px solid #00000017;
-}
-/* End Footer */
+
