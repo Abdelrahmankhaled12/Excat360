@@ -38,21 +38,21 @@ window.onclick = function () {
 };
 
 // Wait for the DOM content to be fully loaded before executing the code
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Execute the following code after a delay of 5000 milliseconds (5 seconds)
-//     setTimeout(() => {
-//         // Initialize the WOW.js library for animating elements
-//         new WOW().init();
-//         // Hide the loader element after 5 seconds
-//         document.getElementById("loader").style.display = "none";
-//         // Hide the effect element after 5 seconds
-//         document.getElementById("effect").style.display = "none";
-//         // Show the sections element after 5 seconds
-//         document.getElementById("sections").style.display = "block";
-//         // Otherwise, hide the buttonScroll
-//         buttonScroll.style.opacity = "0";
-//     }, 4000); // 4000 milliseconds = 4 seconds
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    // Execute the following code after a delay of 5000 milliseconds (5 seconds)
+    setTimeout(() => {
+        // Initialize the WOW.js library for animating elements
+        new WOW().init();
+        // Hide the loader element after 5 seconds
+        document.getElementById("loader").style.display = "none";
+        // Hide the effect element after 5 seconds
+        document.getElementById("effect").style.display = "none";
+        // Show the sections element after 5 seconds
+        document.getElementById("sections").style.display = "block";
+        // Otherwise, hide the buttonScroll
+        buttonScroll.style.opacity = "0";
+    }, 4000); // 4000 milliseconds = 4 seconds
+});
 
 // Event listener for 'showMenu' button click event
 document.getElementById("showMenu").addEventListener("click", function () {
