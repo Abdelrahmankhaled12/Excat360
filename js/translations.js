@@ -92,6 +92,8 @@ const translations = {
         pricing_boxOne_heading: "Free",
         pricing_boxOne_price: "0",
         pricing_boxOne_limit: "/mo",
+        pricing_boxOneDiscount:"$11.99",
+        pricing_boxOneSave:"SAVE 100%",
         pricing_boxOne_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxOne_itemss_item_2: "Unlimited Team Members",
         pricing_boxOne_itemss_item_3: "Unlimited Leads",
@@ -103,6 +105,8 @@ const translations = {
         pricing_boxTwo_heading: "Standard",
         pricing_boxTwo_price: "99",
         pricing_boxTwo_limit: "/mo",
+        pricing_boxTwoDiscount:"$120.99",
+        pricing_boxTwoSave:"SAVE 45%",
         pricing_boxTwo_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxTwo_itemss_item_2: "Unlimited Team Members",
         pricing_boxTwo_itemss_item_3: "Unlimited Leads",
@@ -114,6 +118,8 @@ const translations = {
         pricing_boxThree_heading: "Premium",
         pricing_boxThree_price: "350",
         pricing_boxThree_limit: "/mo",
+        pricing_boxThreeDiscount:"$420.99",
+        pricing_boxThreeSave:"SAVE 55%",
         pricing_boxThree_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxThree_itemss_item_2: "Unlimited Team Members",
         pricing_boxThree_itemss_item_3: "Unlimited Leads",
@@ -155,7 +161,11 @@ const translations = {
         // box 
         contact_headingBox: "Drop us a message",
         contact_paragraphBox: "We will get back to you as soon as possible.",
-
+        // form
+        contact_inputName: "Full Name",
+        contact_inputPhone: "Number Phone",
+        contact_inputEmail: "Email",
+        contact_inputMessage: "Message",
         // button
         contact_button: "Submit",
         // =================================================================
@@ -175,9 +185,32 @@ const translations = {
         // ==============================================================
         // ==============================================================
         // Start Section Consultation
+        // title
         consultation_heading: "YOUR INITIAL CONSULTATION",
         consultation_paragraphOne: "Our free initial consultation gives you the opportunity to discuss your requirements and goals with us. We listen carefully to gain a better understanding of your needs and offer you possible solutions.",
         consultation_paragraphTwo: "You will have the opportunity to ask questions and find out more about our services. Together we will develop a strategy to achieve your goals and advance your company.",
+        // form
+        consultation_inputName: "Full Name",
+        consultation_inputPhone: "Number Phone",
+        consultation_inputEmail: "Email",
+        consultation_inputMessage: "Message",
+        // Radio
+        consultation_titleRadio: "Industry",
+        consultation_radioOne: "Building",
+        consultation_radioTwo: "architecture",
+        consultation_radioThree: "Graphic design",
+        consultation_radioFour: "cables",
+        consultation_radioFive: "Other",
+        // CheckBoxes
+        consultation_titleCheckBoxes: "Interests",
+        consultation_checkboxOne: "Accounting",
+        consultation_checkboxTwo: "Project management",
+        consultation_checkboxThree: "Customer management",
+        consultation_checkboxFour: "Other",
+
+        consultation_agreeTransmissionData: " I agree to the transmission of the data",
+        // button
+        consultation_button: "Submit",
         // End Section Consultation
 
     },
@@ -276,6 +309,8 @@ const translations = {
         pricing_boxOne_heading: "Frei",
         pricing_boxOne_price: "0",
         pricing_boxOne_limit: "/mo",
+        pricing_boxOneDiscount:"$11.99",
+        pricing_boxOneSave:"SPAREN 71%",
         pricing_boxOne_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxOne_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxOne_itemss_item_3: "Unbegrenzte Leads",
@@ -287,6 +322,8 @@ const translations = {
         pricing_boxTwo_heading: "Standard",
         pricing_boxTwo_price: "99",
         pricing_boxTwo_limit: "/mo",
+        pricing_boxTwoDiscount:"$120.99",
+        pricing_boxTwoSave:"SPAREN 45%",
         pricing_boxTwo_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxTwo_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxTwo_itemss_item_3: "Unbegrenzte Leads",
@@ -298,6 +335,8 @@ const translations = {
         pricing_boxThree_heading: "Prämie",
         pricing_boxThree_price: "350",
         pricing_boxThree_limit: "/mo",
+        pricing_boxThreeDiscount:"$420.99",
+        pricing_boxThreeSave:"SPAREN 55%",
         pricing_boxThree_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxThree_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxThree_itemss_item_3: "Unbegrenzte Leads",
@@ -342,6 +381,11 @@ const translations = {
         // box 
         contact_headingBox: "Schreiben Sie uns eine Nachricht",
         contact_paragraphBox: "Wir werden uns schnellstmöglich bei Ihnen melden.",
+        // form
+        contact_inputName: "Vollständiger Name",
+        contact_inputPhone: "Telefonnummer",
+        contact_inputEmail: "Email",
+        contact_inputMessage: "Nachricht",
         // button
         contact_button: "Einreichen",
         // =================================================================
@@ -361,14 +405,34 @@ const translations = {
         // ==============================================================
         // ==============================================================
         // Start Section Consultation
+        // Title
         consultation_heading: "IHRE ERSTE BERATUNG",
         consultation_paragraphOne: "In unserem kostenlosen Erstgespräch haben Sie die Möglichkeit, Ihre Anforderungen und Ziele mit uns zu besprechen. Wir hören Ihnen aufmerksam zu, um Ihre Bedürfnisse besser zu verstehen und Ihnen mögliche Lösungen anzubieten.",
         consultation_paragraphTwo: "Sie haben die Möglichkeit, Fragen zu stellen und mehr über unsere Leistungen zu erfahren. Gemeinsam entwickeln wir eine Strategie, um Ihre Ziele zu erreichen und Ihr Unternehmen voranzubringen",
+        // form
+        consultation_inputName: "Vollständiger Name",
+        consultation_inputPhone: "Telefonnummer",
+        consultation_inputEmail: "Email",
+        consultation_inputMessage: "Nachricht",
+        // Radio
+        consultation_titleRadio: "Industrie",
+        consultation_radioOne: "Gebäude",
+        consultation_radioTwo: "die Architektur<",
+        consultation_radioThree: "Grafikdesign",
+        consultation_radioFour: "Kabel",
+        consultation_radioFive: "Andere",
+
+        // CheckBoxes
+        consultation_titleCheckBoxes: "Interessen",
+        consultation_checkboxOne: "Buchhaltung",
+        consultation_checkboxTwo: "Projektmanagement",
+        consultation_checkboxThree: "Kundenmanagement",
+        consultation_checkboxFour: "Andere",
+
+        consultation_agreeTransmissionData: "Ich bin mit der Übermittlung der Daten einverstanden",
+        // button
+        consultation_button: "Kontaktdetails",
         // End Section Consultation
-
-
-
-
     },
 };
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tag providing a brief description of the webpage -->
     <meta name="description"
-        content="EXACT360 enables time-saving automation of processes by automating routine tasks such as quotation and invoice creation. I focus on valuable tasks and drive the growth of the company. With our solution, construction companies can work more efficiently and make optimal use of their resources to achieve their full potential.">
+        content="IDEA PARTAL enables time-saving automation of processes by automating routine tasks such as quotation and invoice creation. I focus on valuable tasks and drive the growth of the company. With our solution, construction companies can work more efficiently and make optimal use of their resources to achieve their full potential.">
     <!-- Meta tag specifying keywords related to the webpage -->
     <meta name="keywords" content="contact management, project management, progress tracking">
 
@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
 
     <!-- Page Title  -->
-    <title>Idea Portal</title>
+    <title>IDEA PARTAL</title>
 
     <!-- animate on scroll library -->
     <link href="../css/animate.min.css" rel="stylesheet">
@@ -36,31 +36,34 @@
         <div class="loaderTwo"></div>
     </div>
     <!-- End Animation -->
-
     <!-- Start Effect -->
     <div id="effect" class="effect"></div>
     <!-- End Effect -->
-
     <!-- Start Content Page -->
     <div class="sections" id="sections" style="display: none;">
         <!-- Start Banner -->
         <header class="show">
             <div class="containerHeader">
                 <div class="logo">
-                    <img src="../assets/logo.png" alt="">
+                    <img src="../assets/IconOnly_Transparent_NoBuffer.png" alt="">
                 </div>
                 <ul class="links">
                     <li><a href="../index.html" data-i18n="header_Link_home"></a></li>
-                    <li><a href="../index.html"  data-i18n="header_Link_about"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_about"></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_features"></a></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_pricing"></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_team"><a></a></li>
                 </ul>
                 <div class="language">
-                    <select>
-                        <option value="en" selected>EN</option>
-                        <option value="de">DE</option>
-                    </select>
+                    <button id="language">
+                        <div class="text" id="textButtonLanguage">
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul id="ul_language">
+                        <li value="en" class="languageSelector"><img src="../assets/american.png" alt=""> EN </li>
+                        <li value="de" class="languageSelector"><img src="../assets/germany.png" alt=""> DE</li>
+                    </ul>
                 </div>
                 <a href="../index.html" id="contactUsButton" data-i18n="header_Link_contact"></a>
                 <button id="showMenu"><i class="fa-solid fa-bars"></i></button>
@@ -133,85 +136,80 @@
         <div class="consultation">
             <div class="container">
                 <div class="title wow animate__fadeInUp" data-wow-duration="2s">
-                    <h1 data-i18n="consultation_heading">YOUR INITIAL CONSULTATION</h1>
+                    <h1 data-i18n="consultation_heading"></h1>
                 </div>
                 <div class="grid">
                     <div class="form wow animate__fadeInUp" data-wow-duration="2s">
-                        <p data-i18n="consultation_paragraphOne">Our free initial consultation gives you the opportunity to discuss your requirements and
-                            goals
-                            with us. We listen carefully to gain a better understanding of your needs and offer you
-                            possible
-                            solutions.</p>
-                        <p data-i18n="consultation_paragraphTwo">You will have the opportunity to ask questions and find out more about our services. Together
-                            we
-                            will develop a strategy to achieve your goals and advance your company.</p>
+                        <p data-i18n="consultation_paragraphOne"></p>
+                        <p data-i18n="consultation_paragraphTwo"></p>
                         <form action="">
                             <div class="flex">
                                 <div class="div">
-                                    <input placeholder="Full Name" type="text" required>
+                                    <input data-type="form" data-i18n="consultation_inputName" type="text" required>
                                     <i class="fa-solid fa-user"></i>
                                 </div>
                                 <div class="div">
-                                    <input placeholder="Number Phone" type="text" required>
+                                    <input data-type="form" data-i18n="consultation_inputPhone" type="text" required>
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                             </div>
                             <div class="div">
-                                <input placeholder="Email" type="email" required>
+                                <input data-type="form" data-i18n="consultation_inputEmail" type="email" required>
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <h5>Industry</h5>
+                            <h5  data-i18n="consultation_titleRadio"></h5>
                             <div class="radios">
                                 <div class="radio">
                                     <input type="radio" name="Industry" checked id="Building">
-                                    <label for="Building">Building</label>
+                                    <label  data-i18n="consultation_radioOne" for="Building"></label>
                                 </div>
                                 <div class="radio">
                                     <input type="radio" name="Industry" id="architecture">
-                                    <label for="architecture">architecture</label>
+                                    <label  data-i18n="consultation_radioTwo" for="architecture"></label>
                                 </div>
                                 <div class="radio">
                                     <input type="radio" name="Industry" id="graphic-design">
-                                    <label for="graphic-design">Graphic design</label>
+                                    <label  data-i18n="consultation_radioThree" for="graphic-design"></label>
                                 </div>
                                 <div class="radio">
                                     <input type="radio" name="Industry" id="cables">
-                                    <label for="cables">cables</label>
+                                    <label  data-i18n="consultation_radioFour" for="cables"></label>
                                 </div>
                                 <div class="radio">
                                     <input type="radio" name="Industry" id="Other">
-                                    <label for="Other">Other</label>
+                                    <label  data-i18n="consultation_radioFive" for="Other"></label>
                                 </div>
                             </div>
-                            <h5>Interests</h5>
+                            <h5  data-i18n="consultation_titleCheckBoxes"></h5>
                             <div class="checkBoxes">
-                                <label class="checkbox">accounting
+                                <label class="checkbox"><span data-i18n="consultation_checkboxOne"></span>
                                     <input type="checkbox" checked="checked" name="Interests" id="accounting">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox">Project management
+                                <label class="checkbox"> <span data-i18n="consultation_checkboxTwo"></span>
                                     <input type="checkbox" name="Interests" id="project_management">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox">Customer management
+                                <label class="checkbox"> <span data-i18n="consultation_checkboxThree"></span>
                                     <input type="checkbox" name="Interests" id="customer_management">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox">Other
+                                <label class="checkbox"> <span data-i18n="consultation_checkboxFour"></span>
                                     <input type="checkbox" name="Interests" id="other">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="div">
-                                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea data-type="form" data-i18n="consultation_inputMessage" cols="30"
+                                    rows="10"></textarea>
                             </div>
                             <div class="checkBoxes">
-                                <label class="checkbox">I agree to the transmission of the data
+                                <label class="checkbox"> <span data-i18n="consultation_agreeTransmissionData"></span>
                                     <input type="checkbox" name="agreeTransmissionData" id="agreeData" required>
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <button type="sumbit">Submit</button>
+                            <button type="sumbit" data-i18n="consultation_button"></button>
                         </form>
                     </div>
                     <div class="boxes wow animate__fadeInUp" data-wow-duration="2s">
@@ -302,7 +300,7 @@
                 <ul>
                     <li><a href="../index.html" data-i18n="header_Link_home"></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_about"></a></li>
-                    <li><a href="../index.html"  data-i18n="header_Link_features"></a></li>
+                    <li><a href="../index.html" data-i18n="header_Link_features"></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_pricing"></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_team"><a></a></li>
                     <li><a href="../index.html" data-i18n="header_Link_contact"><a></a></li>

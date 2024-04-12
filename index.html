@@ -26,26 +26,26 @@
 
 <body>
     <!-- Start Animation -->
-    <div class="animation" id="loader">
+    <!-- <div class="animation" id="loader">
         <div class="image">
             <img src="./assets/IconOnly_Transparent_NoBuffer.png" alt="">
         </div>
         <div class="loader"></div>
         <div class="loaderTwo"></div>
-    </div>
+    </div> -->
     <!-- End Animation -->
     <!-- Start Effect -->
-    <div id="effect" class="effect"></div>
+    <!-- <div id="effect" class="effect"></div> -->
     <!-- End Effect -->
-    <!-- Start Content Page   -->
-    <div class="sections" id="sections" style="display: none;" >
+    <!-- Start Content Page   style="display: none;"-->
+    <div class="sections" id="sections">
         <!-- Start Hero banner -->
         <div class="landing" id="home">
             <!-- Start Header -->
             <header id="header">
                 <div class="containerHeader">
                     <div class="logo">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/IconOnly_Transparent_NoBuffer.png" alt="">
                     </div>
                     <ul class="links">
                         <li data-id="home" data-i18n="header_Link_home"></li>
@@ -56,10 +56,15 @@
                         <li>
                     </ul>
                     <div class="language">
-                        <select>
-                            <option value="en" selected>EN</option>
-                            <option value="de">DE</option>
-                        </select>
+                        <button id="language">
+                            <div class="text" id="textButtonLanguage">
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul id="ul_language">
+                            <li value="en" class="languageSelector"><img src="./assets/american.png" alt=""> EN </li>
+                            <li value="de" class="languageSelector"><img src="./assets/germany.png" alt=""> DE</li>
+                        </ul>
                     </div>
                     <button id="contactUsButton" data-i18n="header_Link_contact"></button>
                     <button id="showMenu"><i class="fa-solid fa-bars"></i></button>
@@ -239,6 +244,12 @@
                 <div class="plans">
                     <div class="plan  wow animate__fadeInUp" data-wow-duration="1.5s">
                         <h2 data-i18n="pricing_boxOne_heading"></h2>
+                        <div class="discount">
+                            <del data-i18n="pricing_boxOneDiscount"></del>
+                            <div class="save">
+                                <p data-i18n="pricing_boxOneSave"></p>
+                            </div>
+                        </div>
                         <div class="price">
                             <span>$</span>
                             <h5 data-i18n="pricing_boxOne_price"></h5>
@@ -257,6 +268,12 @@
                     </div>
                     <div class="plan active  wow animate__fadeInUp" data-wow-duration="2s">
                         <h2 data-i18n="pricing_boxTwo_heading"></h2>
+                        <div class="discount">
+                            <del data-i18n="pricing_boxTwoDiscount"></del>
+                            <div class="save">
+                                <p data-i18n="pricing_boxTwoSave"></p>
+                            </div>
+                        </div>
                         <div class="price">
                             <span>$</span>
                             <h5 data-i18n="pricing_boxTwo_price"></h5>
@@ -275,6 +292,12 @@
                     </div>
                     <div class="plan  wow animate__fadeInUp" data-wow-duration="2.5s">
                         <h2 data-i18n="pricing_boxThree_heading"></h2>
+                        <div class="discount">
+                            <del data-i18n="pricing_boxThreeDiscount"></del>
+                            <div class="save">
+                                <p data-i18n="pricing_boxThreeSave"></p>
+                            </div>
+                        </div>
                         <div class="price">
                             <span>$</span>
                             <h5 data-i18n="pricing_boxThree_price"></h5>
@@ -381,20 +404,21 @@
                         <form action="">
                             <div class="flex">
                                 <div class="div">
-                                    <input placeholder="Full Name" type="text" required>
+                                    <input type="text" data-type="form" data-i18n="contact_inputName" required>
                                     <i class="fa-solid fa-user"></i>
                                 </div>
                                 <div class="div">
-                                    <input placeholder="Number Phone" type="text" required>
+                                    <input data-type="form" data-i18n="contact_inputPhone" type="text" required>
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                             </div>
                             <div class="div">
-                                <input placeholder="Email" type="email" required>
+                                <input type="email" data-type="form" data-i18n="contact_inputEmail" required>
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div class="div">
-                                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea data-type="form" data-i18n="contact_inputMessage" cols="30"
+                                    rows="10"></textarea>
                             </div>
                             <button type="sumbit" data-i18n="contact_button"></button>
                         </form>
@@ -489,8 +513,10 @@
                     <li data-id="about" data-i18n="header_Link_about"></li>
                     <li data-id="features" data-i18n="header_Link_features"></li>
                     <li data-id="pricing" data-i18n="header_Link_pricing"></li>
-                    <li data-id="team" data-i18n="header_Link_team"><li>
-                    <li data-id="contact" data-i18n="header_Link_contact"><li>
+                    <li data-id="team" data-i18n="header_Link_team">
+                    <li>
+                    <li data-id="contact" data-i18n="header_Link_contact">
+                    <li>
                 </ul>
             </div>
             <div id="outMenu"></div>
