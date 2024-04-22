@@ -37,8 +37,8 @@
     <!-- Start Effect -->
     <div id="effect" class="effect"></div>
     <!-- End Effect -->
-    <!-- Start Content Page  -->
-    <div class="sections" id="sections" style="display: none;">
+    <!-- Start Content Page -->
+    <div class="sections" id="sections" style="display: none;" >
         <!-- Start Hero banner -->
         <div class="landing" id="home">
             <!-- Start Header -->
@@ -246,7 +246,7 @@
                     <div class="plan  wow animate__fadeInUp" data-wow-duration="1.5s">
                         <h2 data-i18n="pricing_boxOne_heading"></h2>
                         <div class="discount">
-                            <del data-i18n="pricing_boxOneDiscount"></del>
+                            <span data-i18n="pricing_boxOneDiscount"></span>
                             <div class="save">
                                 <p data-i18n="pricing_boxOneSave"></p>
                             </div>
@@ -270,7 +270,7 @@
                     <div class="plan active  wow animate__fadeInUp" data-wow-duration="2s">
                         <h2 data-i18n="pricing_boxTwo_heading"></h2>
                         <div class="discount">
-                            <del data-i18n="pricing_boxTwoDiscount"></del>
+                            <span data-i18n="pricing_boxTwoDiscount"></span>
                             <div class="save">
                                 <p data-i18n="pricing_boxTwoSave"></p>
                             </div>
@@ -294,7 +294,7 @@
                     <div class="plan  wow animate__fadeInUp" data-wow-duration="2.5s">
                         <h2 data-i18n="pricing_boxThree_heading"></h2>
                         <div class="discount">
-                            <del data-i18n="pricing_boxThreeDiscount"></del>
+                            <span data-i18n="pricing_boxThreeDiscount"></span>
                             <div class="save">
                                 <p data-i18n="pricing_boxThreeSave"></p>
                             </div>
@@ -316,6 +316,7 @@
                         <p data-i18n="pricing_boxThree_footer"></p>
                     </div>
                 </div>
+                <a href="./pages/demo.html" class="requestButton" data-i18n="pricing_requestButton"></a>
             </div>
         </div>
         <!-- End Section pricing  -->
@@ -421,6 +422,12 @@
                                 <textarea data-type="form" data-i18n="contact_inputMessage" cols="30"
                                     rows="10"></textarea>
                             </div>
+                            <div class="checkBoxes">
+                                <label class="checkbox"> <span data-i18n="consultation_agreeTransmissionData"></span>
+                                    <input type="checkbox" name="agreeTransmissionData" id="agreeData" required>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                             <button type="sumbit" data-i18n="contact_button"></button>
                         </form>
                         <div class="boxes">
@@ -441,6 +448,9 @@
                                     <h4>Address</h4>
                                     <p>Kamber & Fankhauser Dorfmattweg 7 4512 Bellach</p>
                                 </div>
+                            </div>
+                            <div class="visistFAQs">
+                                <p data-i18n="contact_VisitFAQs"></p>
                             </div>
                         </div>
                     </div>
@@ -525,8 +535,6 @@
         <!-- Header Mobile -->
     </div>
     <!-- End Content Page -->
-
-
     <!-- File Js Wow -->
     <script src="./js/wow.min.js"></script>
     <!-- File js home -->

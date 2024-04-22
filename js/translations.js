@@ -92,8 +92,8 @@ const translations = {
         pricing_boxOne_heading: "Free",
         pricing_boxOne_price: "0",
         pricing_boxOne_limit: "/mo",
-        pricing_boxOneDiscount:"$11.99",
-        pricing_boxOneSave:"SAVE 100%",
+        pricing_boxOneDiscount: "$11.99",
+        pricing_boxOneSave: "SAVE 100%",
         pricing_boxOne_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxOne_itemss_item_2: "Unlimited Team Members",
         pricing_boxOne_itemss_item_3: "Unlimited Leads",
@@ -105,8 +105,8 @@ const translations = {
         pricing_boxTwo_heading: "Standard",
         pricing_boxTwo_price: "99",
         pricing_boxTwo_limit: "/mo",
-        pricing_boxTwoDiscount:"$120.99",
-        pricing_boxTwoSave:"SAVE 45%",
+        pricing_boxTwoDiscount: "$120.99",
+        pricing_boxTwoSave: "SAVE 45%",
         pricing_boxTwo_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxTwo_itemss_item_2: "Unlimited Team Members",
         pricing_boxTwo_itemss_item_3: "Unlimited Leads",
@@ -118,8 +118,8 @@ const translations = {
         pricing_boxThree_heading: "Premium",
         pricing_boxThree_price: "350",
         pricing_boxThree_limit: "/mo",
-        pricing_boxThreeDiscount:"$420.99",
-        pricing_boxThreeSave:"SAVE 55%",
+        pricing_boxThreeDiscount: "$420.99",
+        pricing_boxThreeSave: "SAVE 55%",
         pricing_boxThree_itemss_item_1: "Unlimited Landing Pages",
         pricing_boxThree_itemss_item_2: "Unlimited Team Members",
         pricing_boxThree_itemss_item_3: "Unlimited Leads",
@@ -129,6 +129,8 @@ const translations = {
         pricing_boxThree_footer: "Start by trying our service for 30 days free trial.",
         // Button
         pricing_button: "Get Started",
+        pricing_requestButton: "request for demo",
+
         // End Section pricing
         // ==============================================================
         // ==============================================================
@@ -168,6 +170,8 @@ const translations = {
         contact_inputMessage: "Message",
         // button
         contact_button: "Submit",
+        // Visit FAQs
+        contact_VisitFAQs: `Have questions? Explore our frequently asked questions (FAQs) to find answers to common inquiries. If you can't find what you're looking for, please don't hesitate to reach out to us directly.<a href="./pages/FAQs.html">FAQs</a>`,
         // =================================================================
         // =================================================================
         // =================================================================
@@ -212,7 +216,87 @@ const translations = {
         // button
         consultation_button: "Submit",
         // End Section Consultation
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Page FAQS
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Start FAQS 
+        // title 
+        faqs_title: "Frequently Asked Questions",
+        // Contetnt One
+        faqs_title_contentOne: "About Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentOne: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelOne_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // Accordion Two
+        faqs_accordionTwo_contentOne: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelTwo_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // Accordion Three
+        faqs_accordionThree_contentOne: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelThree_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // ======================================================================================================
+        // Contetnt Two
+        faqs_title_contentTwo: "About Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelOne_contentTwo: "",
+        // Accordion Two
+        faqs_accordionTwo_contentTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelTwo_contentTwo: "",
+        // Accordion Three
+        faqs_accordionThree_contentTwo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelThree_contentTwo: "",
+        // ======================================================================================================
+        // Contetnt Three
+        faqs_title_contentThree: "About Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentThree: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelOne_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // Accordion Two
+        faqs_accordionTwo_contentThree: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelTwo_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // Accordion Three
+        faqs_accordionThree_contentThree: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?",
+        faqs_panelThree_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente provident? Illo pariatur sunt, architecto vitae sed nam doloremque quis accusantium veritatis!",
+        // End FAQS 
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Page Demo
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Start Section Demo
+        // title
+        demo_heading: "REQUEST FOR DEMO",
+        // form
+        demo_inputFirstName: "First Name",
+        demo_inputFirstLast: "Last Name",
+        demo_inputCompanyName: "Company Name (optional)",
 
+        demo_inputEmail: "Email",
+        demo_inputPhone: "Number Phone",
+        demo_inputStreet: "Street",
+        demo_inputCity: "city",
+        demo_inputPostalCode: "Postal Code",
+        // radios
+        demo_radioOne: "Demo Access",
+        demo_radioTwo: "Order Lite,",
+        demo_radioThree: "Order Enterprise",
+        demo_radioFour: "Order On-prem version",
+        sector_of_business: "Sector Of Business",
+        // button
+        demo_button: "Submit",
+        // End Section Demo
     },
     de: {
         // Start Header 
@@ -309,8 +393,8 @@ const translations = {
         pricing_boxOne_heading: "Frei",
         pricing_boxOne_price: "0",
         pricing_boxOne_limit: "/mo",
-        pricing_boxOneDiscount:"$11.99",
-        pricing_boxOneSave:"SPAREN 71%",
+        pricing_boxOneDiscount: "$11.99",
+        pricing_boxOneSave: "SPAREN 71%",
         pricing_boxOne_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxOne_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxOne_itemss_item_3: "Unbegrenzte Leads",
@@ -322,8 +406,8 @@ const translations = {
         pricing_boxTwo_heading: "Standard",
         pricing_boxTwo_price: "99",
         pricing_boxTwo_limit: "/mo",
-        pricing_boxTwoDiscount:"$120.99",
-        pricing_boxTwoSave:"SPAREN 45%",
+        pricing_boxTwoDiscount: "$120.99",
+        pricing_boxTwoSave: "SPAREN 45%",
         pricing_boxTwo_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxTwo_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxTwo_itemss_item_3: "Unbegrenzte Leads",
@@ -335,8 +419,8 @@ const translations = {
         pricing_boxThree_heading: "Prämie",
         pricing_boxThree_price: "350",
         pricing_boxThree_limit: "/mo",
-        pricing_boxThreeDiscount:"$420.99",
-        pricing_boxThreeSave:"SPAREN 55%",
+        pricing_boxThreeDiscount: "$420.99",
+        pricing_boxThreeSave: "SPAREN 55%",
         pricing_boxThree_itemss_item_1: "Unbegrenzte Landingpages",
         pricing_boxThree_itemss_item_2: "Unbegrenzte Teammitglieder",
         pricing_boxThree_itemss_item_3: "Unbegrenzte Leads",
@@ -346,6 +430,7 @@ const translations = {
         pricing_boxThree_footer: "Probieren Sie unseren Service zunächst 30 Tage lang kostenlos aus.",
         // Button
         pricing_button: "Loslegen",
+        pricing_requestButton: "Anfrage für Demo",
         // End Section pricing
         // ==============================================================
         // ==============================================================
@@ -388,6 +473,8 @@ const translations = {
         contact_inputMessage: "Nachricht",
         // button
         contact_button: "Einreichen",
+        // Visit FAQs
+        contact_VisitFAQs: `Habe Fragen? Entdecken Sie unsere häufig gestellten Fragen (FAQs), um Antworten auf häufig gestellte Fragen zu finden. Wenn Sie nicht finden, was Sie suchen, zögern Sie bitte nicht, uns direkt zu kontaktieren.<a href="./pages/FAQs.html">FAQs</a>`,
         // =================================================================
         // =================================================================
         // =================================================================
@@ -433,6 +520,88 @@ const translations = {
         // button
         consultation_button: "Kontaktdetails",
         // End Section Consultation
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Page FAQS
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Start FAQS 
+        // title 
+        faqs_title: "Häufig gestellte Fragen",
+        // Contetnt One
+        faqs_title_contentOne: "Über Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentOne: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelOne_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Two
+        faqs_accordionTwo_contentOne: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelTwo_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Three
+        faqs_accordionThree_contentOne: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelThree_contentOne: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // ======================================================================================================
+        // Contetnt Two
+        faqs_title_contentTwo: "Über Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentTwo: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelOne_contentTwo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Two
+        faqs_accordionTwo_contentTwo: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelTwo_contentTwo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Three
+        faqs_accordionThree_contentTwo: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelThree_contentTwo: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // ======================================================================================================
+        // Contetnt Three
+        faqs_title_contentThree: "Über Lorem ipsum dolor sit amet.",
+        // Accordion One
+        faqs_accordionOne_contentThree: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelOne_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Two
+        faqs_accordionTwo_contentThree: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelTwo_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // Accordion Three
+        faqs_accordionThree_contentThree: "Lorem ipsum, Schmerz, Sit-Amet-Consectetur-Adipisicing-Elit. Blanditiis, Suscipit?",
+        faqs_panelThree_contentThree: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, illo voluptatibus hic nostrum suscipit id fuga perspiciatis sapiente vorsorglich? Illo pariatur sont, der Lebensarchitekt ist so wertvoll, dass er wahre Anschuldigungen erhebt!",
+        // End FAQS 
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Page Demo
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // =================================================================
+        // Start Section Demo
+        // title
+        demo_heading: "ANFRAGE FÜR DEMO",
+        // form
+        demo_inputFirstName: "Vorname",
+        demo_inputFirstLast: "Nachname",
+        demo_inputCompanyName: "Unternehmensnahme (Optional)",
+
+        demo_inputEmail: "Email",
+        demo_inputPhone: "Telefonnummer",
+        demo_inputStreet: "Straße",
+        demo_inputCity: "Stadt",
+        demo_inputPostalCode: "Postleitzahl",
+        // radios
+        demo_radioOne: "Demo-Zugang",
+        demo_radioTwo: "Bestellen Sie Lite",
+        demo_radioThree: "Bestellen Sie Unternehmen",
+        demo_radioFour: "Bestellen Sie die On-Prem-Version",
+        
+        sector_of_business: "Wirtschaftssektor",
+        // button
+        demo_button: "Submit",
+        // End Section Demo
     },
 };
 
